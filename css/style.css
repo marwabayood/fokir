@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  /* **************Navbar******************* */
+  .navigationBar {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 25px;
+    background-color:transparent;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+  }
+  
+  .navigationBar li {
+    float: right;
+  }
+  
+  .navigationBar li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navigationBar li a:hover {
+    color: #ff305b;
+    cursor: pointer;
+  }
+  
+/* **************Header****************** */
+header{
+    background-image: linear-gradient(to right bottom, rgba(44, 43, 43, 0.5),rgba(44, 43, 43, 0.1)),url(../img/slider-01.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.contentHeader{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+    font-family: sans-serif;
+}
+.contentHeader h1{
+    color: #ff305b;
+}
+.contentHeader .animated-text{
+    font-size: 26px;
+    font-weight: 400;
+}
+.animated-text span::after{
+    content: '';
+    margin-left: 10px;
+    width: 0;
+    height: 100%;
+    background-color: transparent;
+    animation: words 5s ease-out infinite;
+}
+
+@keyframes words{
+    0%{
+        content: '|';
+    }
+    10%{
+        content: 'De|';
+    }
+    20%{
+        content: 'Desi|';
+    }
+    30%{
+        content: 'Design|';
+    }
+    40%{
+        content: 'Designer|';
+    }
+    50%{
+        content: '|';
+    }
+    60%{
+        content: 'De|';
+    }
+    70%{
+        content: 'Deve|';
+    }
+    80%{
+        content: 'Develo|';
+    }
+    90%{
+        content: 'Develope|';
+    }
+    100%{
+        content: 'Developer |';
+    }
+}
+/* *********Proile************** */
+.profile{
+    width: 65%;
+    border: 10px solid rgb(94, 105, 116);
+    position: relative;
+}
+.profile .profile-img{
+    transform: translate(15px,10px);
+}
+.profile .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(23, 23, 23, 0.26);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    transform: translate(15px,10px);
+}
+.profile:hover .overlay{
+    height: 100%;
+}
+
+.socialmedia{
+    position: absolute;
+    overflow: hidden;
+    top: 40%;
+    left: 20%;
+}
+.socialmedia-list{
+    list-style: none;
+    margin: auto;
+}
+.socialmedia-list li{
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    
+}
+.socialmedia .socialmedia-list li:hover{
+    color: #ff305b;
+}
+.titleProfile{
+    font-weight: 800;
+    color: #ff305b;
+}
+.paraghProfile{
+    padding: 4px;
+    padding-bottom: 6px;
+    border-bottom: 2px dotted ;
+}
+.detailsProfile h5{
+    display: inline-block;
+}
+.btn{
+    padding: 8px;
+    background-color: #ff305b;
+    color: white;
+}
+.btn:hover{
+    background-color: #fd0033;
+    color: white;
+}
+/* *****************Service********** */
+.service{
+    background-color: #f8f8f8;
+}
+.title{
+    font-weight: bold;
+    font-size: 36px;
+}
+.cardService{
+    padding: 15px;
+    box-sizing: border-box;
+}
+.cardService i{
+    font-size: 36px;
+    color: #ff305b;
+    margin-bottom: 5px;
+}
+.cardService h4{
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 5px;
+}
+.cardService p{
+    color: #666;
+}
+.cardService:hover{
+    background-color: #f8f8f8;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ************* Portfolio************ */
+.controls button{
+    background-color: transparent;
+    color: #333;
+    border: 0px;
+    margin: 12px;
+}
+.controls button:active{
+    color: #ff305b;
+}
+
+/* ******************ww***************/
+.ww{
+    background-color: #f8f8f8;
+    padding-top: 20px;
+}
+.ww i{
+    display: block;
+    color: #ff305b;
+    font-size: 34px;
+    margin: 10px;
+}
+.ww span{
+    font-weight: bold;
+}
+.ww h5{
+    color: #666;
+}
+
+/* ********client feedback ******** */
+.client{
+    background-color: #dbdbdb;
+    width: 60%;
+    margin: auto;
+    height: 250px;
+    position: relative;
+}
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff305b;
+    clip-path: polygon(23% 0, 0 65%, 0 0);
+    height: 100%;
+    width: 100%;
+}
+.client img{
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+}
+.content-client{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width: 80%;
+}
+.content-client span{
+    color: #666;
+}
+.content-client p{
+    color: #3b3b3b;
+    padding: 5px;
+}
+/* **********Blog************ */
+.blog{
+    background-color: #f8f8f8;
+    padding-top: 20px;
+}
+.dateBlog{
+    color: #666;
+    margin: 5px;
+}
+.card-body h5{
+    color: #383838;
+}
+.card-body h5:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+.card-body a{
+    color: #3b3b3b;
+}
+.card-body a:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+.card iframe{
+    height: 200px;
+}
+/* **************Footer*********** */
+footer{
+    background-color: #383838;
+}
+/* .footersocial{
+    /* background-color: #f1f1f1; 
+    margin: auto;
+} */
+.footersocial ul{
+    list-style: none;
+    margin-left: 42%;
+}
+.footersocial ul li{
+    float: left;
+    color: #dbdbdb;
+    font-size: 20px;
+    margin: 10px;
+}
+.footersocial ul li:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+.footersocial p{
+    clear: left;
+    color: #dbdbdb;
+}
